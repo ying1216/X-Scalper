@@ -1,74 +1,30 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
+X Scalper
+一、	專案名稱
+「 X Scalper區塊鏈售票系統」
 
-[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+二、	專案動機
+本專案於在進行畢業專案期間，與專案組員在修習以太坊原理與實作的課時，所構想出的專案內容。鑒於當今售票系統在售票存在的現存問題，提出以區塊鏈技術作為改善的方案。當初所發想是由於在各大運動賽事、演唱會等，黃牛票的情形相當猖獗，我們只能透過實名制、限制購買量來解決這些問題，但仍然無法遏止漫天無際的的喊價，導致真正需要的人、或者忠實觀眾常無法以原本的價格買到該票。
 
-## Preview
+三、	專案目的
+依據上述的情況，我們利用在課堂上所學，使用了以太坊當中的ERC721的規範來進行票卷系統的設計，達到票卷所需要的客製化、差別化的特性，並搭配智能合約的輔助，希望透過將票卷的交易進行能在智能合約的監督與限制下完成。如此一來，票卷的價格就受到了限制，並且能根據ERC721基礎上的屬性來調整票卷資訊、價格、座位等，使得在票卷不只在官方發售或者私下交換上，皆能運作在一個可靠的機制下。
 
-[![Creative Preview](https://startbootstrap.com/assets/img/templates/creative.jpg)](https://blackrockdigital.github.io/startbootstrap-creative/)
+四、	專案特色
+1.	票卷內容彈性設計: 不同於常見像是實際貨幣的ERC20代幣，其每枚代幣間都是相同的，而建立在基礎的ERC721下的代幣，具有不可分割的、獨一無二的性質，因此符合當今票卷的特性。
+2.	可追蹤票卷流向: 因為票卷的交易、交換都在區塊鏈下進行，發票公司就能實際的去追蹤每張票的流向。一但有異常出現，也能夠即時發現並馬上處理。
+3.	防止黃牛: 我們在售票系統中因為使用到了智能合約，故能夠有效限制每個人所能購買的數量、票卷私下交易的金額、每人最多的票卷持有量等，因此能夠有效的阻卻黃牛。
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
+五、	工作分配
+於專案當中，我負責的項目有:
+1.	智能合約的設計
+2.	網頁前端介面的設計
+3.	於Ganache上進行測試
 
-## Status
+六、	開發工具
+1.	Solidity: 用以撰寫智能合約
+2.	Web3.js: 從區塊鏈鏈上取得區塊資料
+3.	Node.js: 網頁後端
+4.	Javascript、HTML、CSS: 網頁前端
+5.	Ethereum: 開發區塊鏈應用
+6.	Ganache: 測試
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-creative.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative?type=dev)
 
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/creative/)
-* Install via npm: `npm i startbootstrap-creative`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-creative)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-#### Gulp Tasks
-
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
-
-## Troubleshooting and Help
-
-Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
-
-**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
